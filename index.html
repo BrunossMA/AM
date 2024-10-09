@@ -13,7 +13,7 @@
             color: #333;
         }
         header {
-            background-color: #2C3E50;
+            background-color: #2C3E50; /* Blu Navy */
             color: white;
             padding: 20px;
             text-align: center;
@@ -23,7 +23,7 @@
             font-size: 2.5em;
         }
         nav {
-            background-color: #34495E;
+            background-color: #2C3E50; /* Blu Navy */
             padding: 10px 0;
             text-align: center;
         }
@@ -40,7 +40,7 @@
             padding: 50px 20px;
         }
         .container {
-            max-width: 1200px;
+            max-width: 900px; /* Layout più ristretto */
             margin: 0 auto;
             text-align: left;
         }
@@ -48,12 +48,17 @@
             color: #2C3E50;
             margin-bottom: 20px;
         }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
         .project-card {
             display: block;
-            width: 300px;
-            margin: 20px auto;
+            width: 30%; /* Ogni bottone prende il 30% della larghezza per 3 colonne */
+            margin-bottom: 20px;
             padding: 20px;
-            background-color: #2980B9;
+            background-color: #2C3E50; /* Blu Navy */
             color: white;
             text-align: center;
             text-decoration: none;
@@ -63,7 +68,7 @@
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         }
         .project-card:hover {
-            background-color: #3498DB;
+            background-color: #34495E;
         }
         .project-card span {
             display: block;
@@ -73,7 +78,7 @@
             color: #f0f0f0;
         }
         footer {
-            background-color: #2C3E50;
+            background-color: #2C3E50; /* Blu Navy */
             color: white;
             text-align: center;
             padding: 20px;
@@ -118,18 +123,20 @@
 <section id="progetti">
     <div class="container">
         <h2>Progetti</h2>
-        <a href="https://github.com/tuo-username/progetto1" target="_blank" class="project-card">
-            Progetto Analisi Rischio 1
-            <span>Analisi del rischio finanziario utilizzando modelli statistici per l'ottimizzazione del portafoglio.</span>
-        </a>
-        <a href="https://github.com/tuo-username/progetto2" target="_blank" class="project-card">
-            Progetto Statistica 2
-            <span>Studio delle variabili economiche tramite regressioni multiple per la previsione di mercati futuri.</span>
-        </a>
-        <a href="https://github.com/tuo-username/progetto3" target="_blank" class="project-card">
-            Modello di Previsione 3
-            <span>Implementazione di un modello di machine learning per la previsione del rischio di credito.</span>
-        </a>
+        <div class="grid">
+            <a href="https://github.com/tuo-username/progetto1" target="_blank" class="project-card">
+                Progetto Analisi Rischio 1
+                <span>Analisi del rischio finanziario utilizzando modelli statistici per l'ottimizzazione del portafoglio.</span>
+            </a>
+            <a href="https://github.com/tuo-username/progetto2" target="_blank" class="project-card">
+                Progetto Statistica 2
+                <span>Studio delle variabili economiche tramite regressioni multiple per la previsione di mercati futuri.</span>
+            </a>
+            <a href="https://github.com/tuo-username/progetto3" target="_blank" class="project-card">
+                Modello di Previsione 3
+                <span>Implementazione di un modello di machine learning per la previsione del rischio di credito.</span>
+            </a>
+        </div>
     </div>
 </section>
 
