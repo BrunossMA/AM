@@ -6,6 +6,8 @@
     <title>Andrea Mauro's Portfolio</title>
     <!-- Import Roboto font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet"> 
+    <!-- Import Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -90,11 +92,19 @@
             border-top: 1px solid #e0e0e0;
             margin-top: 40px;
         }
-        a {
-            color: #1a0dab;
+        footer a {
+            color: #000; /* Ensure icons are black */
+            text-decoration: none;
+            margin-right: 20px; /* Spacing between links */
+            display: inline-flex;
+            align-items: center; /* Align icons with text */
         }
-        a:hover {
+        footer a:hover {
             text-decoration: underline;
+        }
+        footer i {
+            margin-right: 8px; /* Space between icon and text */
+            color: #000; /* Set icons to black */
         }
         @media (max-width: 768px) {
             .project-card {
@@ -107,8 +117,7 @@
 
 <header>
     <h1>Andrea Mauro's Portfolio</h1>
-    <img src="../images/portfolio.png" alt="Portfolio Icon">
-
+    <img src="images/portfolio.png" alt="Portfolio Icon">
 </header>
 
 <div class="container">
@@ -131,7 +140,6 @@
             <h3>Project 3</h3>
             <span>Implementation of a machine learning model for credit risk prediction.</span>
         </a>
-        <!-- Add more project cards as needed -->
     </div>
 </div>
 
