@@ -2,82 +2,85 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio di Andrea Mauro</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-        }
-        header, nav, section, footer {
-            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
         }
         header {
-            background-color: #f0f0f0;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            overflow: hidden;
+            padding: 40px;
+            font-size: 2em;
+            font-weight: bold;
         }
         nav a {
-            color: #fff;
-            padding: 14px 20px;
-            float: left;
-            text-align: center;
+            color: #333;
             text-decoration: none;
-        }
-        nav a:hover {
-            background-color: #575757;
+            margin: 0 15px;
+            font-size: 1.2em;
         }
         section {
-            background-color: #fff;
-            padding: 40px;
+            padding: 40px 0;
         }
-        footer {
-            background-color: #f0f0f0;
-            text-align: center;
-            padding: 10px;
+        h2 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-        h1, h2 {
-            color: #333;
+        .project-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .project-button:hover {
+            background-color: #555;
+        }
+        footer {
+            padding: 20px;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Benvenuto nel Portfolio di Andrea Mauro</h1>
+    Benvenuto nel Portfolio di Andrea Mauro
 </header>
 
 <nav>
-    <div class="container">
-        <a href="#chi-sono">Chi Sono</a>
-        <a href="#progetti">Progetti</a>
-        <a href="#contatti">Contatti</a>
-    </div>
+    <a href="#chi-sono">Chi Sono</a>
+    <a href="#progetti">Progetti</a>
+    <a href="#contatti">Contatti</a>
 </nav>
 
 <section id="chi-sono">
     <div class="container">
         <h2>Chi Sono</h2>
-        <p>Ciao! Mi chiamo <strong>Andrea Mauro</strong> e sono uno sviluppatore web con esperienza nella creazione di siti e applicazioni moderne e responsive. Attualmente mi trovo a [la tua città].</p>
+        <p>Ciao! Mi chiamo <strong>Andrea Mauro</strong> e sono uno sviluppatore web con esperienza nella creazione di siti e applicazioni moderne e responsive.</p>
     </div>
 </section>
 
 <section id="progetti">
     <div class="container">
         <h2>Progetti</h2>
-        <ul>
-            <li><strong>Progetto 1:</strong> Descrizione breve del progetto 1.</li>
-            <li><strong>Progetto 2:</strong> Descrizione breve del progetto 2.</li>
-            <li><strong>Progetto 3:</strong> Descrizione breve del progetto 3.</li>
-        </ul>
+        <a href="https://github.com/tuo-username/progetto1" target="_blank" class="project-button">Progetto 1</a>
+        <a href="https://github.com/tuo-username/progetto2" target="_blank" class="project-button">Progetto 2</a>
+        <a href="https://github.com/tuo-username/progetto3" target="_blank" class="project-button">Progetto 3</a>
     </div>
 </section>
 
@@ -85,15 +88,13 @@
     <div class="container">
         <h2>Contatti</h2>
         <p>Email: <a href="mailto:andrea.mauro@example.com">andrea.mauro@example.com</a></p>
-        <p>Telefono: +39 123 456 7890</p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/andreamauro" target="_blank">linkedin.com/in/andreamauro</a></p>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2024 Andrea Mauro. Tutti i diritti riservati.</p>
+    &copy; 2024 Andrea Mauro. Tutti i diritti riservati.
 </footer>
 
 </body>
 </html>
-
