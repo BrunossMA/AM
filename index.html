@@ -3,48 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio di Andrea Mauro</title>
+    <title>Portfolio di [Nome Cognome] - Risk Analyst e Statistico</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Lato', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            text-align: center;
+            color: #333;
         }
         header {
-            padding: 40px;
-            font-size: 2em;
-            font-weight: bold;
+            background-color: #2C3E50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #34495E;
+            padding: 10px 0;
+            text-align: center;
         }
         nav a {
-            color: #333;
+            color: white;
             text-decoration: none;
             margin: 0 15px;
-            font-size: 1.2em;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            border-bottom: 2px solid #1ABC9C;
         }
         section {
-            padding: 40px 0;
+            padding: 50px 20px;
         }
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 0 20px;
+            text-align: left;
+        }
+        h2 {
+            color: #2C3E50;
+            margin-bottom: 20px;
+        }
+        .project-card {
+            display: block;
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #2980B9;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .project-card:hover {
+            background-color: #3498DB;
+        }
+        .project-card span {
+            display: block;
+            font-size: 0.9em;
+            margin-top: 10px;
+            font-style: italic;
+            color: #f0f0f0;
         }
         footer {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
             padding: 20px;
-            font-size: 0.9em;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    Benvenuto nel Portfolio di Andrea Mauro
+    <h1>Portfolio di [Nome Cognome]</h1>
+    <p>Aspirante Risk Analyst e Statistico</p>
 </header>
 
 <nav>
     <a href="#chi-sono">Chi Sono</a>
+    <a href="#competenze">Competenze</a>
     <a href="#progetti">Progetti</a>
     <a href="#contatti">Contatti</a>
 </nav>
@@ -52,29 +98,51 @@
 <section id="chi-sono">
     <div class="container">
         <h2>Chi Sono</h2>
-        <p>Ciao! Mi chiamo <strong>Andrea Mauro</strong> e sono uno sviluppatore web.</p>
+        <p>Sono [Nome Cognome], un aspirante Risk Analyst con una solida esperienza in statistica e analisi dati. Mi occupo di sviluppare modelli matematici per la gestione del rischio e utilizzo strumenti di analisi avanzata per fornire insight utili a decisioni strategiche.</p>
+    </div>
+</section>
+
+<section id="competenze">
+    <div class="container">
+        <h2>Competenze</h2>
+        <ul>
+            <li>Analisi del rischio finanziario e operativo</li>
+            <li>Statistica avanzata e modelli predittivi</li>
+            <li>Programmazione in Python e R</li>
+            <li>Visualizzazione dati con Tableau, Power BI</li>
+            <li>Machine Learning per la previsione del rischio</li>
+        </ul>
     </div>
 </section>
 
 <section id="progetti">
     <div class="container">
         <h2>Progetti</h2>
-        <a href="https://github.com/tuo-username/progetto1" target="_blank">Progetto 1</a>
-        <a href="https://github.com/tuo-username/progetto2" target="_blank">Progetto 2</a>
-        <a href="https://github.com/tuo-username/progetto3" target="_blank">Progetto 3</a>
+        <a href="https://github.com/tuo-username/progetto1" target="_blank" class="project-card">
+            Progetto Analisi Rischio 1
+            <span>Analisi del rischio finanziario utilizzando modelli statistici per l'ottimizzazione del portafoglio.</span>
+        </a>
+        <a href="https://github.com/tuo-username/progetto2" target="_blank" class="project-card">
+            Progetto Statistica 2
+            <span>Studio delle variabili economiche tramite regressioni multiple per la previsione di mercati futuri.</span>
+        </a>
+        <a href="https://github.com/tuo-username/progetto3" target="_blank" class="project-card">
+            Modello di Previsione 3
+            <span>Implementazione di un modello di machine learning per la previsione del rischio di credito.</span>
+        </a>
     </div>
 </section>
 
 <section id="contatti">
     <div class="container">
         <h2>Contatti</h2>
-        <p>Email: <a href="mailto:andrea.mauro@example.com">andrea.mauro@example.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/andreamauro" target="_blank">linkedin.com/in/andreamauro</a></p>
+        <p>Email: <a href="mailto:tuaemail@example.com">tuaemail@example.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/tuo-username" target="_blank">linkedin.com/in/tuo-username</a></p>
     </div>
 </section>
 
 <footer>
-    &copy; 2024 Andrea Mauro. Tutti i diritti riservati.
+    &copy; 2024 [Nome Cognome] - Tutti i diritti riservati
 </footer>
 
 </body>
