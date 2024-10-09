@@ -11,20 +11,30 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
+            color: #000; /* Changed to pure black */
             background-color: #f7f7f7; /* Light background for minimalism */
         }
         header {
             background-color: #ffffff;
-            color: #333;
+            color: #000;
             padding: 40px 20px;
             text-align: center;
             border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         header h1 {
             margin: 0;
             font-size: 2.5em;
             font-weight: 700;
+            display: inline-block;
+        }
+        header img {
+            margin-left: 20px;
+            width: 50px; /* Adjust the size of the icon */
+            height: 50px;
+            vertical-align: middle;
         }
         .container {
             max-width: 800px;
@@ -32,7 +42,7 @@
             padding: 0 20px;
         }
         h2 {
-            color: #333;
+            color: #000; /* Changed to pure black */
             font-size: 1.8em;
             margin-bottom: 20px;
             font-weight: 700;
@@ -52,7 +62,7 @@
             background-color: #ffffff;
             padding: 20px;
             text-decoration: none;
-            color: #333;
+            color: #000;
             border: 1px solid #e0e0e0;
             border-radius: 5px;
             transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -74,7 +84,7 @@
         }
         footer {
             background-color: #ffffff;
-            color: #999;
+            color: #000;
             text-align: center;
             padding: 20px;
             border-top: 1px solid #e0e0e0;
@@ -97,6 +107,7 @@
 
 <header>
     <h1>Andrea Mauro's Portfolio</h1>
+    <img src="/images/portfolio.png" alt="Portfolio Icon"> 
 </header>
 
 <div class="container">
@@ -135,4 +146,3 @@
 
 </body>
 </html>
-
