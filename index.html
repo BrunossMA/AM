@@ -13,8 +13,8 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            color: #000; /* Changed to pure black */
-            background-color: #f7f7f7; /* Light background for minimalism */
+            color: #000;
+            background-color: #f7f7f7;
         }
         header {
             background-color: #ffffff;
@@ -22,9 +22,7 @@
             padding: 40px 20px;
             text-align: center;
             border-bottom: 1px solid #e0e0e0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            position: relative; /* Position relative to contain the snake animation */
         }
         header h1 {
             margin: 0;
@@ -34,17 +32,38 @@
         }
         header img {
             margin-left: 20px;
-            width: 50px; /* Adjust the size of the icon */
+            width: 50px;
             height: 50px;
             vertical-align: middle;
         }
+
+        /* Snake animation */
+        .snake {
+            position: absolute;
+            top: 0;
+            left: -150px; /* Start position off-screen */
+            width: 150px; /* Adjust the size of the snake image */
+            height: auto;
+            animation: moveSnake 10s linear infinite; /* Animation duration and repeat */
+        }
+
+        /* Keyframes to animate the snake */
+        @keyframes moveSnake {
+            0% {
+                left: -150px; /* Start off the screen */
+            }
+            100% {
+                left: 100%; /* Move across the entire header */
+            }
+        }
+
         .container {
             max-width: 800px;
             margin: 40px auto;
             padding: 0 20px;
         }
         h2 {
-            color: #000; /* Changed to pure black */
+            color: #000;
             font-size: 1.8em;
             margin-bottom: 20px;
             font-weight: 700;
@@ -93,18 +112,18 @@
             margin-top: 40px;
         }
         footer a {
-            color: #000; /* Ensure icons are black */
+            color: #000;
             text-decoration: none;
-            margin-right: 20px; /* Spacing between links */
+            margin-right: 20px;
             display: inline-flex;
-            align-items: center; /* Align icons with text */
+            align-items: center;
         }
         footer a:hover {
             text-decoration: underline;
         }
         footer i {
-            margin-right: 8px; /* Space between icon and text */
-            color: #000; /* Set icons to black */
+            margin-right: 8px;
+            color: #000;
         }
         @media (max-width: 768px) {
             .project-card {
@@ -118,6 +137,7 @@
 <header>
     <h1>Andrea Mauro's Portfolio</h1>
     <img src="images/portfolio.png" alt="Portfolio Icon">
+    <img src="images/snake.png" class="snake" alt="Animated Snake"> <!-- Add snake image -->
 </header>
 
 <div class="container">
@@ -145,13 +165,9 @@
 
 <div class="container">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/your-username" target="_blank">linkedin.com/in/your-username</a></p>
+    <p> <i class="fas fa-envelope"></i> Email: <a href="mailto:am.mauro99@gmail.com">am.mauro99@gmail.com</a></p>
+    <p> <i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/andrea-mauro99" target="_blank">linkedin.com/in/andrea-mauro99</a></p>
 </div>
-
-<footer>
-    &copy; 2024 Andrea Mauro - All rights reserved
-</footer>
 
 </body>
 </html>
