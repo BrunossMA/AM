@@ -1,0 +1,26 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Cambia 'main' con il nome della tua branch principale, se è diversa
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Build project
+      run: |
+        # Esegui eventuali comandi di build (es: npm install && npm run build)
+        # Se il progetto non richiede build, lascia vuoto o elimina questo step
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./  # Cambia il percorso in base alla cartella contenente i file finali
+        publish_branch: gh-pages
