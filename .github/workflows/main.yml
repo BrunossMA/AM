@@ -15,12 +15,13 @@ jobs:
 
     - name: Build project
       run: |
-        # Esegui eventuali comandi di build (es: npm install && npm run build)
-        # Se il progetto non richiede build, lascia vuoto o elimina questo step
+        # Comandi di build (se non serve build, lascia vuoto)
+        # es: npm install && npm run build
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./  # Cambia il percorso in base alla cartella contenente i file finali
+        publish_dir: ./  # Cartella che contiene i file finali
         publish_branch: gh-pages
+        force_orphan: true  # Sovrascrive la branch senza cronologia
